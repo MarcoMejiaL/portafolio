@@ -1,5 +1,5 @@
 {
-  "name": "portafoliopersonal",
+  "name": "portafolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Marco Mejia Lopez <tomatin77@gmail.com>",
+  "author": "Marco Mejia Lopez <marcomejia159010@gmail.com>",
   "license": "MIT"
 }
