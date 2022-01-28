@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/241e03a3a0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .container{
+        margin: 12px;
+        height: auto;
+        width: 320px;
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(248, 241, 241, 0.801);    
+        margin: 12px;
+        border-radius: 12px;
+        height: 400px;
+        justify-content: space-around;
+    }
+    .card__logo{
+    border-radius: 50%;
+    background-image: url('./assets/img/Hellbat.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+        
+    }
+    .card__title{
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__title h2{
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+        color: var(--base_black);
+        font-weight: bold;
+    }
+    .card__title p{
+        text-align: center;
+        color: var(--base_black);
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+    }
+    .card__logos{
+        height: 50px;
+        display: flex;        
+        
+        width: 80%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        
+        
+    }
+    .card__logos--img{
+        background-color: var(--base_red);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    .card__logos--img span i{
+        color: white;
+    }
+    .card__logos--p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .card__logos--p p{
+        font-size: 1.8rem;
+        font-weight: 500;
+
+    }
+    .ending{
+        
+        width: 90%;
+        text-align: center;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card__logo">
+                
+            </div>
+            <div class="card__title">
+                <h2>nombre</h2>
+                <p>texto</p>
+            </div>
+            <div class="card__logos">
+                <div class="card__logos--izq">
+                    <div class="card__logos--img">
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="card__logos--p"> 
+                        <p>
+                            32
+                        </p>
+                    </div>
+                </div>
+                <div class="card__logos--der">
+                    <div class="card__logos--img">
+                        <span><i class="fas fa-thumbtack"></i></span>
+                    </div>
+                    <div class="card__logos--p"> 
+                        <p>
+                            459
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ending">
+                <p>nose que poner en esta parte pero hay que hacerlo</p>
+            </div>
+        </div>
+        
+    </div> 
+    
+</body>
+</html>
