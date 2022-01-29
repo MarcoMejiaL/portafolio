@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    width: 400px;
+    height: 500px;
+    justify-items: center;
+    background: whitesmoke;
+}
+header {
+    width: 100%;
+    height: 150px;
+    grid-column: 1 / 7;
+    background-image: url(./assets/img/Hellbat.png);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section {
+    display: grid;
+    grid-column: 1 / 7;
+    grid-row: 2 / 5;
+    justify-items: center;
+    width: 100%;
+}
+
+.img_card {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    background-image: url(./assets/img/Hellbat.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title_card {
+    display: flex;
+    align-items: center;
+    margin: 10px0;
+}
+
+.img_title_card {
+    margin-left: 10px;
+}
+
+p {
+    color: lightslategray;
+}
+</style>
+<body>
+
+    <main>
+        <header></header>
+        <section>
+            <div class="img_card">
+            </div>
+            <div class="title_card">
+                <h1>Tokyo</h1>
+                <img class="img_title_card"alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </section>
+        <footer></footer>
+    </main>
+    
+</body>
+</html>
