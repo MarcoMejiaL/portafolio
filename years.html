@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<style>
+    .years__container{
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(2,150px);
+        gap: 25px;
+        margin: 20px;
+        
+    }
+    .years__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        justify-items: center;
+        border: 1px solid black;
+    }
+    .years__cards h2{
+        
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: var(--base_red);
+        align-items: center;
+        font-size: 3rem;
+        
+        
+        
+    }
+    .years__cards p{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        text-align: center;
+        color: var(--base_black);
+        font-size: 1.8rem;
+    }
+</style>
+<body>
+    <div class="years__container">
+        <section class="years__cards">
+            <h2>12<sup>+</sup></h2>
+            <p>nose que poner</p>
+            
+        </section>
+
+        <section class="years__cards">
+            <h2>12<sup>+</sup></h2>
+            <p>nose que poner</p>
+            
+        </section>
+
+        <section class="years__cards">
+            <h2>12<sup>+</sup></h2>
+            <p>nose que poner</p>
+            
+        </section>
+
+        <section class="years__cards">
+            <h2>12<sup>+</sup></h2>
+            <p>nose que poner</p>
+            
+        </section>
+
+
+    </div>
+    
+</body>
+</html>
