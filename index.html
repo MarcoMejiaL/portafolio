@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <style>
 *{
@@ -37,13 +38,37 @@
     margin: 0 auto;
     height: calc(100vh - 80px);
     flex-direction: column;    
-    border: 1px solid black;
+    
     margin: 40px 0 20px 40px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    text-align: justify;
+}
+.main__title h1{
+    font-size: 4.8rem;
+    margin-bottom: 12px;
+}
+.main__title h1 >span{
+    color:var(--base_red);
+    
+    
+}
+.main__title p{
+    color: var(--base_black);
+    font-size: 2.3rem;
+    margin: 12px;
+}
+.button__cotainer{
+width: 200px;
+height: 80px;
+
+margin: 12px;
+
+
+
 }
 
-
+/* @medias index */
 @media (max-width:990px){
     .photo{
         height: 270px;
@@ -51,6 +76,32 @@
         border-radius: 75%;
         margin: 0 auto 50px;
         
+        transition: all 3s;
+        
+    }
+    .main__container{
+        grid-template-columns: repeat(1,auto);
+    }
+    .main__title{
+        width: auto;
+        margin: 0 auto;
+    }
+}
+@media(max-width:574px){
+    .main__title{
+        
+        align-items: center;
+    }
+    .photo{
+        display: none;
+    }
+    .main__title h1  {
+        font-size: 2.8rem;
+    }
+    .main__title p{
+        
+        
+        font-size: 1.5rem;
     }
 }
 </style>
@@ -63,9 +114,15 @@
     
         </div>      
         <div class="main__title">
-            <h1>titulo de la pagina</h1> 
+            <h1>
+            <span>I'M MARCO MEJIA.</span>
+            </br>
+            WEB DEVELOPMENT
+            </h1> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt hic error beatae repellat laborum explicabo quam corrupti vitae unde ipsum, illo quae repudiandae nihil molestias temporibus? Maxime, esse doloremque?</p>
-            <a href="">enlace</a>
+            <div class="button__cotainer">
+                <a href="">enlace</a>
+            </div>
 
         </div>
     </div>
