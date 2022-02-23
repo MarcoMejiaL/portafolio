@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<style>
+    .formcontainer{
+        display: grid;
+        grid-template: repeat(6,1fr)/repeat(6,1fr);
+        
+        width: 600px;
+        height: 200px;
+        
+        
+    }
+    .formbase{
+        width: auto;
+        height: auto;
+        
+        
+        margin: 6px;
+        
+    }
+    .formname{
+        grid-column: 1/4;
+        grid-row: 1/2 ;
+
+    }
+    .formemail{
+        grid-column: 4/7;
+        grid-row: 1/2;
+    }
+    .formsubject{
+        grid-column: 1/7;
+        grid-row: 2/3;
+    }
+    
+    .formmessage{
+        grid-column: 1/7;
+        grid-row: 3/7;
+   
+
+    }
+    .formmessage--area{
+        width:584px ;
+        height: 118px;
+        
+        
+    }
+    .formsubject--area{
+        width: 580px;
+        height: 21px;
+        
+    }
+    .formemail--area, .formname--area{
+        
+        width: 280px;
+
+    }
+    .input{
+        padding: 0 10px;
+        background-color: transparent;
+        color: var(--base_black);
+        font-size: 1.2rem;
+        border-radius: 12px;
+        border: 1px solid black;
+    }
+
+    .input:focus{
+    border: 1px solid var(--base_red);
+    outline: none;
+}
+    ::placeholder{
+        color:var(--blanquito);
+    }
+    
+</style>
+<body>
+    
+    <label for="" class="formcontainer">
+       <div class="formbase formname">
+           <input type="text" placeholder="Your Name" class="formname--area input">
+       </div>
+       <div class="formemail formbase">
+           <input type="email" name="" id="" placeholder="Your Email" required class="formemail--area input">
+       </div>
+       <div class="formbase formsubject">
+           <input type="text" name="" id="" placeholder="Your Subject" required class="formsubject--area input"> 
+       </div>
+       <div class="formbase formmessage">
+           <textarea name="" id="" class="formmessage--area input" required placeholder="Your Message "></textarea>
+       </div>
+    </label>
+    
+    
+</body>
+</html>
